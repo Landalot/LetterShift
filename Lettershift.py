@@ -97,6 +97,8 @@ for char in strin:
 
     #convert back to letters
     newchar = NumtoLet.get(num)
+    if newchar == None:
+            newchar = "?"
     newstring = addstring(newchar)
 
     #debug print
