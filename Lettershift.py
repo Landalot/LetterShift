@@ -152,6 +152,16 @@ for char in strin:
             26:"Z",
             }
 
+    # A rudimentary modulo function
+
+    while True:
+        if num > 26:
+            num -= 26
+        elif num < 1:
+            num += 26
+        else:
+            break
+
     #convert back to letters
     newchar = NumtoLet.get(num)
     if newchar == None:
