@@ -9,8 +9,6 @@ def addstring(ADDChar):
         retstring=ADDChar
     return retstring
 
-
-
 # Getting the string from the user
 
 print("Insert string to shift")
