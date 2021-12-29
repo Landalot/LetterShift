@@ -123,7 +123,7 @@ for char in strin:
             25:"y",
             26:"z",
             }
-    If CCap = True:
+    if CCap == True:
         NumtoLet = LetterNumber = {
             1:"A",
             2:"B",
