@@ -19,7 +19,11 @@ strin = str(strin)
 
 print("Insert shift amount")
 shift = input()
-shift = int(shift)
+try:
+    shift = int(shift)
+except:
+    shift = 0
+    print("Integer not detected. Defaulting to no shift.")
 
 #Setting up the loop
 
