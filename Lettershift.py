@@ -1,3 +1,16 @@
+#Adding a function to add characters to the output string
+
+def addstring(ADDChar):
+    #A crude way of turning all the letters back into a string.
+
+    try:
+        retstring = newstring+ADDChar
+    except:
+        retstring=ADDChar
+    return retstring
+
+
+
 # Getting the string from the user
 
 strin = input()
@@ -9,6 +22,7 @@ for char in strin:
 
     if char == "A" or char == "B" or char == "C" or char == "D" or char == "E" or char == "F" or char == "G" or char == "H" or char == "I" or char == "J" or char == "K" or char == "L" or char == "M" or char == "N" or char == "O" or char == "P" or char == "Q" or char == "R" or char == "S" or char == "T" or char == "U" or char == "V" or char == "W" or char == "X" or char == "Y" or char == "Z":
         print("This is a cap")
+        newstring = addstring("?")
         continue
 
 #Setting up a dictionary.
@@ -82,22 +96,10 @@ for char in strin:
         }
 
     #convert back to letters
-
-    try:
-        newchar = NumtoLet.get(num)
-        if newchar == None:
-            newchar = "?"
-    except:
-        newchar = "?"
+    newchar = NumtoLet.get(num)
+    newstring = addstring(newchar)
 
     #debug print
     #print(newchar)
-
-    #A crude way of turning all the letters back into a string.
-
-    try:
-        newstring = newstring+newchar
-    except:
-        newstring=newchar
 
 print(newstring)
