@@ -84,12 +84,12 @@ for char in strin:
             "z":26,
             }
 
-        #Referencing the dictionary for a character
-        num = LetterNumber.get(char)
-        #Debug print
-        #print(num)
+    #Referencing the dictionary for a character
+    num = LetterNumber.get(char)
+    #Debug print
+    #print(num)
 
-        #add test
+    #add test
 
     num = num + 2
 
