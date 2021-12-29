@@ -9,8 +9,7 @@ for char in strin:
 
     if char == "A" or char == "B" or char == "C" or char == "D" or char == "E" or char == "F" or char == "G" or char == "H" or char == "I" or char == "J" or char == "K" or char == "L" or char == "M" or char == "N" or char == "O" or char == "P" or char == "Q" or char == "R" or char == "S" or char == "T" or char == "U" or char == "V" or char == "W" or char == "X" or char == "Y" or char == "Z":
         print("This is a cap")
-        newstring = "?"
-        break
+        continue
 
 #Setting up a dictionary.
 
