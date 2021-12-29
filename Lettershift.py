@@ -21,7 +21,6 @@ strin = str(strin)
 for char in strin:
 
     if char == "A" or char == "B" or char == "C" or char == "D" or char == "E" or char == "F" or char == "G" or char == "H" or char == "I" or char == "J" or char == "K" or char == "L" or char == "M" or char == "N" or char == "O" or char == "P" or char == "Q" or char == "R" or char == "S" or char == "T" or char == "U" or char == "V" or char == "W" or char == "X" or char == "Y" or char == "Z":
-        print("This is a cap")
         CCap = True
         LetterNumber = {
             "A":1,
@@ -95,7 +94,7 @@ for char in strin:
 
     #Setting up reverse dictionary
     if CCap == False:
-        NumtoLet = LetterNumber = {
+        NumtoLet = {
             1:"a",
             2:"b",
             3:"c",
@@ -124,7 +123,7 @@ for char in strin:
             26:"z",
             }
     if CCap == True:
-        NumtoLet = LetterNumber = {
+        NumtoLet =  {
             1:"A",
             2:"B",
             3:"C",
