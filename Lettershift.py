@@ -13,8 +13,15 @@ def addstring(ADDChar):
 
 # Getting the string from the user
 
+print("Insert string to shift")
 strin = input()
 strin = str(strin)
+
+# Getting the shift amount from the user.
+
+print("Insert shift amount")
+shift = input()
+shift = int(shift)
 
 #Setting up the loop
 
@@ -90,7 +97,7 @@ for char in strin:
 
     #add test
 
-    num = num + 2
+    num = num + shift
 
     #Setting up reverse dictionary
     if CCap == False:
