@@ -25,11 +25,68 @@ except:
     shift = 0
     print("Integer not detected. Defaulting to no shift.")
 
+# Dictionary for capitalization and letters
+
+Lettercaps = {
+        "A":"cap",
+        "B":"cap",
+        "C":"cap",
+        "D":"cap",
+        "E":"cap",
+        "F":"cap",
+        "G":"cap",
+        "H":"cap",
+        "I":"cap",
+        "J":"cap",
+        "K":"cap",
+        "L":"cap",
+        "M":"cap",
+        "N":"cap",
+        "O":"cap",
+        "P":"cap",
+        "Q":"cap",
+        "R":"cap",
+        "S":"cap",
+        "T":"cap",
+        "U":"cap",
+        "V":"cap",
+        "W":"cap",
+        "X":"cap",
+        "Y":"cap",
+        "Z":"cap",
+        "a":"noc",
+        "b":"noc",
+        "c":"noc",
+        "d":"noc",
+        "e":"noc",
+        "f":"noc",
+        "g":"noc",
+        "h":"noc",
+        "i":"noc",
+        "j":"noc",
+        "k":"noc",
+        "l":"noc",
+        "m":"noc",
+        "n":"noc",
+        "o":"noc",
+        "p":"noc",
+        "q":"noc",
+        "r":"noc",
+        "s":"noc",
+        "t":"noc",
+        "u":"noc",
+        "v":"noc",
+        "w":"noc",
+        "x":"noc",
+        "y":"noc",
+        "z":"noc"
+        }
+
 #Setting up the loop
 
 for char in strin:
 
-    if char == "A" or char == "B" or char == "C" or char == "D" or char == "E" or char == "F" or char == "G" or char == "H" or char == "I" or char == "J" or char == "K" or char == "L" or char == "M" or char == "N" or char == "O" or char == "P" or char == "Q" or char == "R" or char == "S" or char == "T" or char == "U" or char == "V" or char == "W" or char == "X" or char == "Y" or char == "Z":
+    if Lettercaps.get(char) == "cap":
         CCap = True
         LetterNumber = {
             "A":1,
@@ -57,11 +114,11 @@ for char in strin:
             "W":23,
             "X":24,
             "Y":25,
-            "Z":26,
+            "Z":26
             }
 
 #Setting up a dictionary.
-    else:
+    elif Lettercaps.get(char) == "noc":
         CCap = False
         LetterNumber = {
             "a":1,
@@ -89,7 +146,7 @@ for char in strin:
             "w":23,
             "x":24,
             "y":25,
-            "z":26,
+            "z":26
             }
 
     #Referencing the dictionary for a character
@@ -129,7 +186,7 @@ for char in strin:
             23:"w",
             24:"x",
             25:"y",
-            26:"z",
+            26:"z"
             }
     if CCap == True:
         NumtoLet =  {
@@ -158,7 +215,7 @@ for char in strin:
             23:"W",
             24:"X",
             25:"Y",
-            26:"Z",
+            26:"Z"
             }
 
     # A rudimentary modulo function
