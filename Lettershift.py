@@ -149,6 +149,12 @@ for char in strin:
             "z":26
             }
 
+# Else statement set up for Misc characters.
+    else:
+        newchar = "?"
+        newstring = addstring(newchar)
+        continue
+
     #Referencing the dictionary for a character
     num = LetterNumber.get(char)
     #Debug print
