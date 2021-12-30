@@ -243,4 +243,5 @@ for char in strin:
     #debug print
     #print(newchar)
 
+print("The resulting shifted string is:")
 print(newstring)
