@@ -151,7 +151,7 @@ for char in strin:
 
 # Else statement set up for Misc characters.
     else:
-        newchar = "?"
+        newchar = char
         newstring = addstring(newchar)
         continue
 
@@ -236,8 +236,6 @@ for char in strin:
 
     #convert back to letters
     newchar = NumtoLet.get(num)
-    if newchar == None:
-            newchar = "?"
     newstring = addstring(newchar)
 
     #debug print
