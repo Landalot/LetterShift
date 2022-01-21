@@ -21,7 +21,7 @@ print("Insert shift amount")
 shift = input()
 try:
     shift = int(shift)
-except:
+except: #  Set the shift to 0 if python doesn't recognise a shift amount.
     shift = 0
     print("Integer not detected. Defaulting to no shift.")
 
